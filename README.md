@@ -7,3 +7,4 @@ Write a simple servlet which adds two integer values passed by a user as paramet
 The user of the applicationshould be able to pass parameters to the servlet either with
 GET or  POST  method. 
 Create two different SUBMIT buttons for each of the HTTPmethod.
+Make the servlet robust to invalid input —- a user may send parameter valueswhich cannot be interpreted as integers.
