@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+    <form action="result" method="post">
+        Your numbers please: <input type="text" id="input">
+
+        <div id="error"></div>
+
+        <script>
+            input.onblur = function() {
+                    let integer = document.getElementById("input").value;
+                    error.innerHTML = integer.split(" ").map(Number).reduce((partialSum, a) => partialSum + a, 0);
+            };
+
+            input.onfocus = function() {
+                    error.innerHTML = "";
+            };
+        </script>
+    </form>
+</body>
+</html>
